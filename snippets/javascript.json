@@ -1,0 +1,89 @@
+{
+  "c axios get": {
+      "prefix": ["cget"],
+      "body": [
+          "export const ${1:name} = params => {",
+          "\treturn axios.get(`${0:url}`, {params})",
+          "}"
+      ],
+      "description": "a axios get temp"
+  },
+  "c axios post": {
+      "prefix": ["cpost"],
+      "body": [
+          "export const ${1:name} = params => {",
+          "\treturn axios.post(`${0:url}`, params)",
+          "}"
+      ],
+      "description": "a axios post temp"
+  },
+  "c node router": {
+      "prefix": ["cnr"],
+      "body": [
+          "router.${1|get,post,put,delete|}(`${2:url}`, vail(), async (ctx, next) => {",
+          "\ttry{\n\n\t} catch(e) {\n\n\t}",
+          "})"
+      ],
+      "description": "a koa router temp"
+  },
+  "c elementv width styleName": {
+      "prefix": ["ces"],
+      "body": ["<${1:div} styleName=\"\">${0}</${1:div}>"],
+      "description": "a element attrbute width styleName"
+  },
+  "c caihrc form config templete": {
+      "prefix": ["ccfct", "cformConfig"],
+      "body": [
+          "const formConfig = {",
+          "\tallowClear:false,",
+          "\treset:true,",
+          "\titems: [",
+          "\t\t{",
+          "\t\t\tname: 'formItemName',",
+          "\t\t\tlabel: 'label',",
+          "\t\t\ttype: '${1|text,button,number,password,textarea,更多参考组件库|}',",
+          "\t\t\trules: [{require:true}],",
+          "\t\t\tprops: {",
+          "\t\t\t\tplaceholder: 'placeholder'",
+          "\t\t\t}",
+          "\t\t\t// 更多属性参考组件库文档",
+          "\t\t}",
+          "\t ]",
+          "}"
+      ],
+      "description": "caihrc form config templete"
+  },
+  "c caihrc table colums config templete": {
+      "prefix": ["cctct", "ctableColums"],
+      "body": [
+          "let colums = [{",
+          "\ttitle: '标题',",
+          "\taligin: 'center',",
+          "\tdataIndex: 'dataIndex',",
+          "\trender: (text, rowData, index) => text,",
+          "\twidth: 'auto',",
+          "\t// 更多参考组件库文档",
+          "}]"
+      ],
+      "description": "caihrc table colums config templete"
+  },
+  "c react state": {
+      "prefix": ["crs"],
+      "body": "const [${1:state}, set${1:state}] = useState(${0})",
+      "description": "react useState"
+  },
+  "c react effect": {
+      "prefix": ["cre"],
+      "body": "useEffect(() => {${0}},[${1}])",
+      "description": "react useEffect"
+  },
+  "c react compoment": {
+      "prefix": ["crc"],
+      "body": [
+          "const ${1:compomentName} = props => {",
+          "\treturn <>${0}</>",
+          "}"
+      ],
+      "description": "a react compoment"
+  }
+}
