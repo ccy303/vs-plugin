@@ -16,7 +16,8 @@
     ],
     "main": "./dist/extension.js",
     "contributes": {
-        "snippets": [{
+        "snippets": [
+            {
                 "language": "javascript",
                 "path": "./snippets/javascript.json"
             },
@@ -33,16 +34,20 @@
                 "path": "./snippets/javascript.json"
             }
         ],
-        "commands": [{
-            "command": "c-code-temp.createReactCompomentFolder",
-            "title": "Create React Compoment"
-        }],
-        "menus": {
-            "explorer/context": [{
+        "commands": [
+            {
                 "command": "c-code-temp.createReactCompomentFolder",
-                "group": "c-code-temp",
-                "when": "explorerResourceIsFolder"
-            }]
+                "title": "Create React Compoment"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "c-code-temp.createReactCompomentFolder",
+                    "group": "c-code-temp",
+                    "when": "explorerResourceIsFolder"
+                }
+            ]
         }
     },
     "scripts": {
