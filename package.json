@@ -2,7 +2,7 @@
     "name": "c-code-temp",
     "displayName": "c-code-temp",
     "description": "常用代码块",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "ccying",
     "engines": {
         "vscode": "^1.57.0"

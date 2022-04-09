@@ -1,5 +1,8 @@
 # c-code-temp README
 
+发布
+vsce publish
+
 常用代码块
 
 -   cpost: axios 发送 post 请求模板
